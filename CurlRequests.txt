@@ -1,0 +1,13 @@
+curl -i -H "Content-Type: application/json" -X POST -d '{"review":"It was amazing"}' http://localhost:5000/sentimentForReview
+
+curl -i -H "Content-Type: application/json" -X POST -d '{"review":"Awful yet amazing experience"}' http://localhost:5000/sentimentForReview
+
+curl -i -H "Content-Type: application/json" -X POST -d '{"review":"It looks good but is awful"}' http://localhost:5000/sentimentForReview
+
+curl -i -H "Content-Type: application/json" -X POST -d '{"review":"Bad Service"}' http://localhost:5000/sentimentForReview
+
+curl -i -H "Content-Type: application/json" -X POST -d '{"review":"Fucking Awesome"}' http://localhost:5000/sentimentForReview
+
+curl -i -H "Content-Type: application/json" -X GET http://localhost:5000/nextWeekSalesPrediction
+
+curl -i -H "Content-Type: application/json" -X POST -d '{"review":"Very bad food"}' http://localhost:5000/sentimentForReview
